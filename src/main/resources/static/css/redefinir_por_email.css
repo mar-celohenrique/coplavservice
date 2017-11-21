@@ -1,0 +1,210 @@
+.BodyPass{
+    background-color: #010214;
+    margin-top:25px;
+}
+
+.PageContainer{
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background:white;
+    max-width:590px;
+    margin:10px auto 20px
+}
+
+@media screen and (max-width:590px){
+    .PageContainer{
+        width:100%;
+        padding:10px 0 0;
+        margin:0
+    }
+}
+
+
+
+
+.offer{
+    width: 450px;
+    padding: 2%;
+    border:1px solid #ddd;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow:hidden
+}
+
+.offer-radius{
+    border-radius:7px;
+}
+
+
+
+
+.label-margin{
+    margin-top:15px;
+}
+
+.InfoUser{
+    margin-bottom:36px;
+}
+
+
+
+
+.PageHeader{
+    font-size:28px;
+    font-weight:200;
+    color:#66757f;
+    margin-bottom:36px
+}
+
+.PageHeader.is-errored{
+    color:#dd2e44
+}
+
+@media screen and (max-width:590px){
+    .PageHeader{
+        font-size:21px;margin-bottom:18px
+    }
+}
+
+
+
+
+.UserHeader{
+    font-size:13px;
+    line-height:1.25;
+    margin-bottom:15px;
+    overflow:hidden;
+    padding-top:0
+}
+
+.UserHeader img{
+    height:48px;
+    width:48px;
+    border-radius:4px;
+    float:left;
+    margin-right:10px
+}
+.UserHeader b{
+    font-size:14px
+}
+
+.UserHeader-details{
+    margin-top:3px
+}
+
+.UserHeader-name{
+    color:#8899a6
+}
+
+@media screen and (max-width:590px){
+    .UserHeader{
+        margin:-3px 0 12px
+    }
+    .UserHeader img{
+        height:38px;
+        width:38px
+    }
+    .UserHeader-details{
+        margin-top:4px
+    }
+}
+
+.UserHeader-name{
+    color:#8899a6
+}
+
+@media screen and (max-width:590px){
+    .UserHeader{
+        margin:-3px 0 12px
+    }
+    .UserHeader img{
+        height:38px;
+        width:38px
+    }
+    .UserHeader-details{
+        margin-top:4px
+    }
+}
+
+
+
+
+.Form-message{
+    font-size:13px;
+    color:#66757f
+}
+
+.Form-message span{
+    display:none
+}
+
+.Form-checkbox{
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.Form-checkbox label{
+    font-weight:normal
+}
+
+
+
+
+.btn, .login {
+    text-align:center
+
+}
+
+.btn.cyan{
+    color: black;
+    background: #00d7d7;
+    background:-moz-linear-gradient(top,#00ffff 0,#00dada 100%);
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#00ffff),color-stop(100%,#00dada));
+    background:-webkit-linear-gradient(top,#00ffff 0,#00dada 100%);
+    background:-o-linear-gradient(top,#00ffff 0,#00dada 100%);
+    background:-ms-linear-gradient(top,#00ffff 0,#00dada 100%);
+    background:linear-gradient(to bottom,#00ffff 0,#00dada 100%)
+}
+
+.btn.cyan:hover{
+    background: #00d7d7;
+    background:-moz-linear-gradient(top, #00ffff 0, #00dada 52%, #00dada 100%);
+    /*background:-webkit-gradient(left top,left bottom,color-stop(0,#00ffff),color-stop(52%,#00dada),color-stop(100%,#00dada));*/
+    background:-webkit-linear-gradient(top,#00ffff 0,#00dada 52%,#00dada 100%);
+    background:-o-linear-gradient(top,#00ffff 0,#00dada 52%,#00dada 100%);
+    background:-ms-linear-gradient(top,#00ffff 0,#00dada 52%,#00dada 100%);
+    background:linear-gradient(to bottom,#00ffff 0,#00dada 52%,#00dada 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffff', endColorstr='#00dada', GradientType=0)
+}
+
+.btn.cyan:active{
+    background:#00dada;
+    background:-moz-linear-gradient(top,#00dada 0,#00dada 22%,#00ffff 100%);
+    /*background:-webkit-gradient(left,left bottom,color-stop(0,#00dada),color-stop(22%,#00dada),color-stop(100%,#00ffff));*/
+    background:-webkit-linear-gradient(top,#00dada 0,#00dada 22%,#00ffff 100%);
+    background:-o-linear-gradient(top,#00dada 0,#00dada 22%,#00ffff 100%);
+    background:-ms-linear-gradient(top,#00dada 0,#00dada 22%,#00ffff 100%);
+    background:linear-gradient(to bottom,#00dada 0,#00dada 22%,#00ffff 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00dada', endColorstr='#00ffff', GradientType=0)
+}
+
+
+
+
+.status_recovery{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.status_recovery p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.ctn {
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
