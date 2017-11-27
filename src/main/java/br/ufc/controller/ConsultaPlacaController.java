@@ -1,7 +1,9 @@
 package br.ufc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -42,8 +44,14 @@ public class ConsultaPlacaController {
 
     @PostMapping(value = "/atualizacao")
     @ResponseBody
-    public List<DenunciaSinistro> atualizacoes(@RequestBody Date data) {
-        return denunciaSinistroService.buscarAtualizacoes(data);
+    public ResponseEntity<List<DenunciaSinistro>> atualizacoes(@RequestBody Long data) {
+        return new ResponseEntity<>(denunciaSinistroService.buscarAtualizacoes(new Date(data)), HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/sinistros")
+    @ResponseBody
+    public ResponseEntity<List<DenunciaSinistro>> sinistros() {
+        return new ResponseEntity<>(denunciaSinistroService.buscarTodos(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/hello")

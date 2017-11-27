@@ -23,4 +23,8 @@ public class DenunciaSinistroService {
     public List<DenunciaSinistro> buscarAtualizacoes(Date date){
         return denunciaSinistroRepository.buscarAtualizacao(date);
     }
+
+    public List<DenunciaSinistro> buscarTodos(){
+        return denunciaSinistroRepository.findAll();
+    }
 }
